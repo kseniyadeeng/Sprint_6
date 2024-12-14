@@ -1,9 +1,9 @@
 import allure
 from locators.order_locators import OrderFormLocators
-from pages.home_page import HomePage
+from pages.home_page import BasePage
 
 
-class OrderPage(HomePage):
+class OrderPage(BasePage):
     def __init__(self, driver):
         self.driver = driver
 

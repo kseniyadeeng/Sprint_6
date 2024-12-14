@@ -1,10 +1,10 @@
 import allure
 import time
 from locators.main_page_locators import MainPageLocators
-from pages.home_page import HomePage
+from pages.home_page import BasePage
 
 
-class MainPage(HomePage):
+class MainPage(BasePage):
     def __init__(self, driver):
         self.driver = driver
 

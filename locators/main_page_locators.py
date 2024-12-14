@@ -32,3 +32,4 @@ class MainPageLocators:
         'QUESTION_5': (By.XPATH, '//div[@id="accordion__heading-4"]/parent::div'),  # Вопрос 5
         'QUESTION_6': (By.XPATH, '//div[@id="accordion__heading-5"]/parent::div'),  # Вопрос 6
         'QUESTION_7': (By.XPATH, '//div[@id="accordion__heading-6"]/parent::div'),  # Вопрос 7
+    }
