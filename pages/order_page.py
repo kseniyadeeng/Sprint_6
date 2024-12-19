@@ -1,6 +1,6 @@
 import allure
 from locators.order_locators import OrderFormLocators
-from pages.home_page import BasePage
+from pages.base_page import BasePage
 
 
 class OrderPage(BasePage):
