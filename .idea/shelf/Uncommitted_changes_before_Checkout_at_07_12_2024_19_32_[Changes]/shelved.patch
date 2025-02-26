@@ -1,0 +1,25 @@
+Index: conftest.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pytest\r\nfrom selenium import webdriver\r\nfrom selenium.webdriver.firefox.options import Options\r\n\r\n@pytest.fixture(scope='function')\r\ndef driver():\r\n    options = Options()\r\n    options.add_argument('--window-size=1280,720')\r\n    driver = webdriver.Firefox(options=options)\r\n    driver.implicitly_wait(15)\r\n    driver.get('https://qa-scooter.praktikum-services.ru/')\r\n    yield driver\r\n    driver.quit()
+===================================================================
+diff --git a/conftest.py b/conftest.py
+--- a/conftest.py	
++++ b/conftest.py	
+@@ -1,13 +1,1 @@
+-import pytest
+-from selenium import webdriver
+-from selenium.webdriver.firefox.options import Options
+-
+-@pytest.fixture(scope='function')
+-def driver():
+-    options = Options()
+-    options.add_argument('--window-size=1280,720')
+-    driver = webdriver.Firefox(options=options)
+-    driver.implicitly_wait(15)
+-    driver.get('https://qa-scooter.praktikum-services.ru/')
+-    yield driver
+-    driver.quit()
+\ No newline at end of file
++co
+\ No newline at end of file
